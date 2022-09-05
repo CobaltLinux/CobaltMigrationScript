@@ -61,8 +61,8 @@ else
 fi
 if [[ $desktop == "pantheon" ]]; then
 	echo "Converting your Arch install to Cobalt Linux Azurite (Pantheon Edition)..."
-	pacman -Syyu --noconfirm pantheon gdm gnome-software gnome-software-packagekit-plugin git
-	systemctl enable gdm
+	pacman -Syyu --noconfirm pantheon lightdm pantheon-default-settings lightdm-pantheon-greeter switchboard elementary-icon-theme elementary-wallpapers gtk-theme-elementary ttf-droid ttf-opensans ttf-roboto sound-theme-elementary gnome-software gnome-software-packagekit-plugin git
+	systemctl enable lightdm
 elif [[ $desktop == "cutefish" ]]; then
 	echo "Converting your Arch install to Cobalt Linux Azurite (Cutefish Edition)..."
 	pacman -Syyu --noconfirm cutefish sddm git
