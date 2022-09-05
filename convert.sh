@@ -57,6 +57,7 @@ elif [[ $desktop == "3" ]]; then
 else
 	echo "Invalid choice. Defaulting to Pantheon... (If you do not want to use this desktop, press CTRL+C now to exit the program.)"
 	sleep 5
+	export desktop="pantheon"
 fi
 if [[ $desktop == "pantheon" ]]; then
 	echo "Converting your Arch install to Cobalt Linux Azurite (Pantheon Edition)..."
